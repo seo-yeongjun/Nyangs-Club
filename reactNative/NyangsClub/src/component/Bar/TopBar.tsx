@@ -38,16 +38,17 @@ export const TopBar: React.FC<PropsWithChildren<TopBarProps>> = ({
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 4,
+    marginTop: 2,
+    paddingBottom: 3,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: 50,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+    borderBottomColor: '#fbefeb',
+    backgroundColor: '#fbf5f3',
   },
   left: {
-    marginLeft: 10,
+    marginLeft: 17,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
   logo: {
     marginRight: 15,
     width: 65,
-    height: 40,
+    height: 42,
   },
   setting: {
     width: 30,

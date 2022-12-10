@@ -1,21 +1,19 @@
 import React, {PropsWithChildren} from 'react';
 import {TopBar} from './TopBar';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {Posting} from "../Main/Post/Posting";
 
 interface MainProps {
   navigation: any;
-  main: React.FunctionComponent<any>;
+  main: any;
 }
 
-export const MainBar: React.FC<PropsWithChildren<MainProps>> = ({
-  navigation,
-  main,
-}) => {
+export const MainBar= ({navigation, main}:MainProps) => {
   return (
     <>
       <SafeAreaView>
-        <TopBar navigation={navigation} />
-        {main({})}
+        <TopBar navigation={navigation}/>
+          {main}
       </SafeAreaView>
     </>
   );
